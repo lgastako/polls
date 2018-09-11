@@ -10,9 +10,6 @@ import PollSource.Projections.FullPoll ( Poll )
 import PollSource.Types
 import Servant
 
--- TODO: to be continued
--- https://haskell-servant.readthedocs.io/en/v0.11.0.1/tutorial/Authentication.html
-
 -- GET /polls/:pollId
 type GetPollR
   = "polls" :> Capture "pollId" PollId
@@ -20,7 +17,6 @@ type GetPollR
 
 -- POST /polls
 type CreatePollR
-  -- :> AppAuth -- TODO: GRRR
   = "polls"
   :> ReqBody '[JSON] NewPoll
   :> Post    '[JSON] CreatedPoll
