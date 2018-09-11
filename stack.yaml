@@ -1,0 +1,14 @@
+resolver: lts-9.21
+
+packages:
+- .
+- location: ../dispenser-core
+  extra-dep: true
+- location: ../dispenser-server
+  extra-dep: true
+
+extra-deps:
+- monad-io-adapter-0.1.0.0
+- protolude-0.2.1
+- servant-0.11
+- servant-server-0.11.0.1
