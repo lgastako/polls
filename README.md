@@ -1,3 +1,3 @@
-# pollsource
+# polls
 
-add description of pollsource here
+Ruminations on an interview problem.
