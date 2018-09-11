@@ -2,9 +2,13 @@ resolver: lts-9.21
 
 packages:
 - .
-- location: ../dispenser-core
+- location:
+    git: git@github.com:SuperpowersCorp/dispenser-core.git
+    commit: e8375b9445d622a7627e60c194b515c9b7963a30
   extra-dep: true
-- location: ../dispenser-server
+- location:
+    git: git@github.com:SuperpowersCorp/dispenser-server.git
+    commit: 155173ec00a2b9f8aedde53d39fcb702cbd3ca31
   extra-dep: true
 
 extra-deps:
